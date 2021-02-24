@@ -2,7 +2,8 @@ import React from "react"
 import { BARS } from "./bars"
 import "./App.css"
 
-// Images: https://pixabay.com/images/search/chocolate%20bar/
+// Images: https://www.google.com/search?q=tesco
+// List: http://www.chocolatereview.co.uk/choctalk/index.php?topic=2942.0
 
 interface BarSearchResult {
   year: number
@@ -48,41 +49,50 @@ function App() {
 
   if (year === null) {
     return (
-      <main>
+      <div id="search-screen">
         <h1>What is your birth year chocolate?</h1>
-        <label htmlFor="year">Year</label>
-        <select id="year" onChange={(e) => showChoc(e.target.value)}>
-          {YEARS.map((year) => (
-            <option key={year}>{year}</option>
-          ))}
-        </select>
-      </main>
+
+        <div id="search">
+          <label htmlFor="year">Year: </label>
+          <select id="year" onChange={(e) => showChoc(e.target.value)}>
+            {YEARS.map((year) => (
+              <option key={year}>{year}</option>
+            ))}
+          </select>
+        </div>
+      </div>
     )
   }
 
   const searchResults = findChoc(year)
+
+  const everything: number[] = Object.keys(BARS)
+    .map((s) => +s)
+    .reverse()
 
   return (
     <main>
       {searchResults.exact && <h1>In {year} these chocolate bars were launched</h1>}
       {!searchResults.exact && <h1>Close to that year, in {searchResults.year} these chocolate bars were launched</h1>}
 
-      <ul>
+      <div id="results">
         {searchResults.bars.map((bar) => (
-          <li key={bar}>
-            <img src={`bars/${toSnakeCase(bar)}.jpeg`} alt="" />
-            <h2>{bar}</h2>
-          </li>
+          <img src={`bars/${toSnakeCase(bar)}.jpeg`} alt={bar} />
         ))}
-      </ul>
+      </div>
 
-      <h3>Check another year</h3>
-      <label htmlFor="year">Year</label>
-      <select id="year" onChange={(e) => showChoc(e.target.value)}>
-        {YEARS.map((year) => (
-          <option key={year}>{year}</option>
+      <h2>The great chocolate bar timeline</h2>
+
+      <div className="timeline">
+        {everything.map((year, index) => (
+          <div className={`container ${index % 2 === 0 ? "left" : "right"}`}>
+            <div className="content">
+              <h3>{year}</h3>
+              <p>{BARS[year].join(", ")}</p>
+            </div>
+          </div>
         ))}
-      </select>
+      </div>
     </main>
   )
 }

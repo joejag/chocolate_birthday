@@ -22,7 +22,7 @@ export const BARS = {
   1957: ["Munchies", "Revels"],
   1953: ["Diam"],
   1958: ["Picnic"],
-  1959: ["Aero Mint"],
+  1959: ["Aero Mint", "Caramac"],
   1960: ["Galaxy", "Cadbury Buttons"],
   1962: ["Topic"],
   1963: ["Creme egg", "Toffee Crisp", "Animal Bar"],
@@ -45,5 +45,6 @@ export const BARS = {
   1996: ["Fuse"],
   1999: ["Kit Kat Chunky"],
   2006: ["Kit Kat Chunky Peanut Butter"],
+  2007: ["Mars Planets"],
   2018: ["Darkmilk"],
 } as Record<number, string[]>
