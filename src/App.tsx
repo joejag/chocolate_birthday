@@ -60,10 +60,6 @@ function App() {
     )
   }
 
-  const fallBackImage = (ev: any) => {
-    ev.target.src = "bars/dairy_milk.jpg"
-  }
-
   const searchResults = findChoc(year)
 
   return (
@@ -74,7 +70,7 @@ function App() {
       <ul>
         {searchResults.bars.map((bar) => (
           <li key={bar}>
-            <img src={`bars/${toSnakeCase(bar)}.jpg`} alt="" onError={fallBackImage} />
+            <img src={`bars/${toSnakeCase(bar)}.jpeg`} alt="" />
             <h2>{bar}</h2>
           </li>
         ))}
