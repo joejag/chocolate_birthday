@@ -3,7 +3,6 @@ import { BARS } from "./bars"
 import "./App.css"
 
 // Images: https://pixabay.com/images/search/chocolate%20bar/
-// https://www.dreamstime.com/photos-images/cadbury.html
 
 interface BarSearchResult {
   year: number
@@ -19,6 +18,11 @@ const toSnakeCase = (string: string) => {
     .join("_")
 }
 
+const THIS_YEAR = new Date().getUTCFullYear()
+const YEARS = Array(THIS_YEAR - (THIS_YEAR - (new Date().getUTCFullYear() - 1899)))
+  .fill("")
+  .map((v, idx) => THIS_YEAR - idx)
+
 function App() {
   const [year, setYear] = React.useState<number | null>(null)
 
@@ -31,7 +35,15 @@ function App() {
       return { year, bars: BARS[year], exact: true }
     }
 
-    return { year: 1905, bars: BARS[1905], exact: false }
+    // search for years either side of the birth year
+    let previousYear = year - 1
+    let nextYear = year + 1
+    while (!(previousYear in BARS) && !(nextYear in BARS)) {
+      previousYear = previousYear - 1
+      nextYear = nextYear + 1
+    }
+    let availableYear = previousYear in BARS ? previousYear : nextYear
+    return { year: availableYear, bars: BARS[availableYear], exact: false }
   }
 
   if (year === null) {
@@ -48,11 +60,11 @@ function App() {
     )
   }
 
-  const searchResults = findChoc(year)
-
   const fallBackImage = (ev: any) => {
     ev.target.src = "bars/dairy_milk.jpg"
   }
+
+  const searchResults = findChoc(year)
 
   return (
     <main>
@@ -80,8 +92,3 @@ function App() {
 }
 
 export default App
-
-const THIS_YEAR = new Date().getUTCFullYear()
-const YEARS = Array(THIS_YEAR - (THIS_YEAR - (new Date().getUTCFullYear() - 1899)))
-  .fill("")
-  .map((v, idx) => THIS_YEAR - idx)
