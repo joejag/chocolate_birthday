@@ -1,4 +1,5 @@
 import React from "react"
+import { BARS } from "./bars"
 import "./App.css"
 
 // Images: https://pixabay.com/images/search/chocolate%20bar/
@@ -79,8 +80,6 @@ function App() {
 }
 
 export default App
-
-const BARS = { 1905: ["Dairy Milk"] } as Record<number, string[]>
 
 const THIS_YEAR = new Date().getUTCFullYear()
 const YEARS = Array(THIS_YEAR - (THIS_YEAR - (new Date().getUTCFullYear() - 1899)))
