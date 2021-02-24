@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/chocolate_birthday/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/chocolate_birthday/static/js/main.e324aebd.chunk.js",
-    "main.js.map": "/chocolate_birthday/static/js/main.e324aebd.chunk.js.map",
+    "main.css": "/chocolate_birthday/static/css/main.4efdf982.chunk.css",
+    "main.js": "/chocolate_birthday/static/js/main.4d690498.chunk.js",
+    "main.js.map": "/chocolate_birthday/static/js/main.4d690498.chunk.js.map",
     "runtime-main.js": "/chocolate_birthday/static/js/runtime-main.6b0b87e4.js",
     "runtime-main.js.map": "/chocolate_birthday/static/js/runtime-main.6b0b87e4.js.map",
     "static/js/2.00ea563e.chunk.js": "/chocolate_birthday/static/js/2.00ea563e.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.4fcb38c5.chunk.js": "/chocolate_birthday/static/js/3.4fcb38c5.chunk.js",
     "static/js/3.4fcb38c5.chunk.js.map": "/chocolate_birthday/static/js/3.4fcb38c5.chunk.js.map",
     "index.html": "/chocolate_birthday/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/chocolate_birthday/static/css/main.8c8b27cf.chunk.css.map",
+    "static/css/main.4efdf982.chunk.css.map": "/chocolate_birthday/static/css/main.4efdf982.chunk.css.map",
     "static/js/2.00ea563e.chunk.js.LICENSE.txt": "/chocolate_birthday/static/js/2.00ea563e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6b0b87e4.js",
     "static/js/2.00ea563e.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.e324aebd.chunk.js"
+    "static/css/main.4efdf982.chunk.css",
+    "static/js/main.4d690498.chunk.js"
   ]
 }
