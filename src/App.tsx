@@ -72,8 +72,10 @@ function App() {
 
   return (
     <main>
-      {searchResults.exact && <h1>In {year} these chocolate bars were launched</h1>}
-      {!searchResults.exact && <h1>Close to that year, in {searchResults.year} these chocolate bars were launched</h1>}
+      {searchResults.exact && <h1>{`In ${year} these chocolate bars were launched`}</h1>}
+      {!searchResults.exact && (
+        <h1>{`Close to that year, in ${searchResults.year} these chocolate bars were launched`}</h1>
+      )}
 
       <div id="results">
         {searchResults.bars.map((bar) => (
