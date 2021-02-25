@@ -39,6 +39,7 @@ export const BARS = {
   1984: ["Twirl", "Bounty", "Spira"],
   1986: ["Boost"],
   1989: ["Chomp"],
+  1991: ["Vice Versas"],
   1992: ["Time Out"],
   1994: ["Reese's Nutrageous", "Hershey's Cookies 'N' Creme"],
   1995: ["Wispa Gold"],
