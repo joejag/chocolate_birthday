@@ -58,6 +58,7 @@ export const BARS = {
   1997: ["Dairy Milk Tasters"], // guess at date for Tasters
   1999: ["Kit Kat Chunky"],
 
+  2002: ["Cadbury Dream"],
   2004: ["Mars Delight"],
   2006: ["Kit Kat Chunky Peanut Butter"],
   2007: ["Mars Planets"],
