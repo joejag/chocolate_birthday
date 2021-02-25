@@ -25,7 +25,7 @@ const YEARS = Array(THIS_YEAR - (THIS_YEAR - (new Date().getUTCFullYear() - 1899
   .map((v, idx) => THIS_YEAR - idx)
 
 function App() {
-  const [year, setYear] = React.useState<number | null>(null)
+  const [year, setYear] = React.useState<number | null>(1991)
 
   const showChoc = (year: string) => {
     setYear(+year)
@@ -90,7 +90,14 @@ function App() {
           <div className={`container ${index % 2 === 0 ? "left" : "right"}`}>
             <div className="content">
               <h3>{year}</h3>
-              <p>{BARS[year].join(", ")}</p>
+              <p>
+                {BARS[year].map((bar) => (
+                  <>
+                    <img src={`bars/${toSnakeCase(bar)}.jpeg`} alt={bar} />
+                    <p>{bar}</p>
+                  </>
+                ))}
+              </p>
             </div>
           </div>
         ))}
