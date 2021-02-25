@@ -95,6 +95,11 @@ function App() {
           </div>
         ))}
       </div>
+
+      <div id="feedback">
+        Something wrong or missing? Send me an email to joe@joejag.com, or tell me on{" "}
+        <a href="https://twitter.com/joe_jag">Twitter</a>
+      </div>
     </main>
   )
 }

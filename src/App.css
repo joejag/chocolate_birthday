@@ -61,6 +61,20 @@ img {
   flex-wrap: wrap;
 }
 
+#feedback {
+  color: white;
+  margin: 32px 12px;
+  font-size: 24px;
+}
+
+#feedback a {
+  color: #ff9f55;
+}
+
+#feedback a:visited {
+  color: #ff9f55;
+}
+
 /* Random timeline copied from the net */
 
 /* Set a background color */
