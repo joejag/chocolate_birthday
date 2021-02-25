@@ -107,8 +107,11 @@ function App() {
       </div>
 
       <div id="feedback">
-        Something wrong or missing? Send me an email to joe@joejag.com, or tell me on{" "}
-        <a href="https://twitter.com/joe_jag">Twitter</a>
+        <p>Method: UK release dates, must have a Wikipedia page to qualify.</p>
+        <p>
+          Something wrong or missing? Send me an email to joe@joejag.com, or tell me on{" "}
+          <a href="https://twitter.com/joe_jag">Twitter</a>
+        </p>
       </div>
     </main>
   )
