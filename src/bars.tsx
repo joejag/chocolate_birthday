@@ -62,5 +62,7 @@ export const BARS = {
   2004: ["Mars Delight"],
   2006: ["Kit Kat Chunky Peanut Butter"],
   2007: ["Mars Planets"],
+
+  2014: ["Nutella & Go!"],
   2018: ["Darkmilk"],
 } as Record<number, string[]>
