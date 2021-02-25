@@ -34,7 +34,7 @@ export const BARS = {
   1962: ["Topic"],
   1963: ["Toffee Crisp", "Animal Bar"],
   1966: ["Crunch"],
-  1967: ["Twix", "Minstrels"],
+  1967: ["Twix", "Minstrels", "Aztec"],
   1968: ["Galaxy Ripple"],
 
   1970: ["Curly Wurly"],
@@ -47,7 +47,7 @@ export const BARS = {
   1980: ["Drifter", "Bitz Mint"],
   1981: ["Wispa"],
   1984: ["Twirl", "Bounty", "Spira"],
-  1986: ["Boost"],
+  1986: ["Boost", "Secret"],
   1989: ["Chomp"],
 
   1991: ["Vice Versas"],
@@ -56,7 +56,7 @@ export const BARS = {
   1995: ["Wispa Gold"],
   1996: ["Fuse"],
   1997: ["Dairy Milk Tasters"], // guess at date for Tasters
-  1999: ["Kit Kat Chunky"],
+  1999: ["Kit Kat Chunky", "Nuts About Caramel"],
 
   2002: ["Cadbury Dream"],
   2004: ["Mars Delight"],
