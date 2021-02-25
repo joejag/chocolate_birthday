@@ -52,7 +52,7 @@ export const BARS = {
 
   1991: ["Vice Versas"],
   1992: ["Time Out"],
-  1994: ["Reese's Nutrageous", "Hershey's Cookies 'N' Creme"],
+  1994: ["Reese's Nutrageous", "Hershey's Cookies 'N' Creme", "Taz"],
   1995: ["Wispa Gold"],
   1996: ["Fuse"],
   1999: ["Kit Kat Chunky"],

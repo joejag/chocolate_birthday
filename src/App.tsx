@@ -25,7 +25,7 @@ const YEARS = Array(THIS_YEAR - (THIS_YEAR - (new Date().getUTCFullYear() - 1899
   .map((v, idx) => THIS_YEAR - idx)
 
 function App() {
-  const [year, setYear] = React.useState<number | null>(1991)
+  const [year, setYear] = React.useState<number | null>(null)
 
   const showChoc = (year: string) => {
     setYear(+year)
