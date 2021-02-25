@@ -79,7 +79,7 @@ function App() {
 
       <div id="results">
         {searchResults.bars.map((bar) => (
-          <div className="result">
+          <div className="result" key={bar}>
             <img src={`bars/${toSnakeCase(bar)}.jpeg`} alt={bar} />
             <span>{bar}</span>
           </div>
@@ -90,17 +90,17 @@ function App() {
 
       <div className="timeline">
         {everything.map((year, index) => (
-          <div className={`container ${index % 2 === 0 ? "left" : "right"}`}>
+          <div key={year} className={`container ${index % 2 === 0 ? "left" : "right"}`}>
             <div className="content">
               <h3>{year}</h3>
-              <p>
+              <div>
                 {BARS[year].map((bar) => (
-                  <>
+                  <span key={bar}>
                     <img src={`bars/${toSnakeCase(bar)}.jpeg`} alt={bar} />
                     <p>{bar}</p>
-                  </>
+                  </span>
                 ))}
-              </p>
+              </div>
             </div>
           </div>
         ))}
