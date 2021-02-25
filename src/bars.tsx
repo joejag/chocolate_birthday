@@ -55,6 +55,7 @@ export const BARS = {
   1994: ["Reese's Nutrageous", "Hershey's Cookies 'N' Creme", "Taz"],
   1995: ["Wispa Gold"],
   1996: ["Fuse"],
+  1997: ["Dairy Milk Tasters"], // guess at date for Tasters
   1999: ["Kit Kat Chunky"],
 
   2006: ["Kit Kat Chunky Peanut Butter"],

@@ -38,7 +38,6 @@ h2 {
   width: 500px;
   height: 200px;
   object-fit: none;
-  margin-bottom: 24px;
 }
 
 #results {
@@ -46,6 +45,14 @@ h2 {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  text-align: center;
+  color: white;
 }
 
 #feedback {

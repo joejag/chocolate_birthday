@@ -79,7 +79,10 @@ function App() {
 
       <div id="results">
         {searchResults.bars.map((bar) => (
-          <img src={`bars/${toSnakeCase(bar)}.jpeg`} alt={bar} />
+          <div className="result">
+            <img src={`bars/${toSnakeCase(bar)}.jpeg`} alt={bar} />
+            <span>{bar}</span>
+          </div>
         ))}
       </div>
 
